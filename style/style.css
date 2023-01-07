@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Pacifico-Regular;
+    src: url("../fonts/Pacifico-Regular.ttf");
+    font-weight: 400;
+}
+
+.background_img{
+    background: url("../img/New_Year_1.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.flex{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.background_list{
+    background-color:rgb(223, 189, 146);
+    border-radius: 6%;
+    margin: 80px 90px 0 0;
+}
+
+.background_second_list{
+    background-color: antiquewhite;
+    border-radius: 4%;
+    padding: 5px;
+    margin: 0 30px 30px;
+}
+
+.background_second_list :nth-child(1){
+    padding-top: 10px;
+}
+
+p{
+    font-family: Pacifico-Regular;
+    font-size: 30px;
+}
+
+.new_hr{
+    margin-top: 0;
+    color: black;
+}
+
+.decor_cristmas{
+    width: 100%;
+    height: 150px;
+}
+
+.decor_ander_list{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 426px;
+    right: 33px;
+    rotate: -40deg;
+}
+
+.decor_ander_list_2{
+    position: absolute;
+    width: 200px;
+    top: 434px;
+    right: 494px;
+    rotate: -15deg;
+}
+
+.display{
+    display: none;
+}
+
+.ded_moroze{
+    width: 600px;
+    position: absolute;
+    top: 500px;
+    display: block;
+    opacity: 0;
+}
+
+.animation{
+    animation-name: ded_moroz;
+    animation-duration: 20s;
+}
+
+@keyframes ded_moroz {
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+
+    15%{
+        opacity: 1;
+        width: 600px;
+        translate: 0;
+    }
+
+    75%{
+        opacity: 1;
+        width: 600px;
+        translate: 1200px 0;
+    }
+
+    100%{
+        opacity: 0;
+        width: 0;
+        translate: 1600px 0;
+    }
+}
+
+.snow *{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    opacity: 0;
+}
+
+.snow > img:nth-child(1){
+    top: 120px;
+    left:150px;
+}
+
+.snow > img:nth-child(2){
+    top: 274px;
+    left: 957px;
+}
+
+.snow > img:nth-child(3){
+    top: 160px;
+    left: 420px;
+}
+
+.snow > img:nth-child(4){
+    top: 112px;
+    left: 794px;
+}
+
+.snow > img:nth-child(5){
+    top: 159px;
+    left: 1088px;
+}
+
+.animation_snow_dansing_1{
+    animation-name: animation_dansing_1;
+    animation-duration: 10s;
+}
+
+@keyframes animation_dansing_1 {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    10%{
+        opacity: 1;
+        transform: scale(2);
+    }
+
+    50%{
+        opacity: 1;
+        transform: scale(3);
+    }
+
+    90%{
+        opacity: 1;
+        transform: scale(2);
+    }
+
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.animation_snow_dansing_2{
+    animation-name: animation_dansing_2;
+    animation-duration: 10s;
+}
+
+@keyframes animation_dansing_2 {
+    0%{
+        opacity: 0;
+        rotate: 0deg;
+    }
+
+    10%{
+        opacity: 1;
+        rotate: 90deg;
+    }
+
+    50%{
+        opacity: 1;
+        rotate: 180deg;
+    }
+
+    90%{
+        opacity: 1;
+        rotate: 90deg;
+    }
+
+    100%{
+        rotate: 0deg;
+        opacity: 0;
+    }
+}
+
+.animation_snow_dansing_3{
+    animation-name: animation_dansing_3;
+    animation-duration: 10s;
+}
+
+@keyframes animation_dansing_3 {
+    0%{
+        opacity: 0;
+        transform: skew(15deg, 15deg);
+    }
+
+    10%{
+        opacity: 1;
+        transform: skew(15deg, 15deg);
+    }
+
+    50%{
+        opacity: 1;
+        transform: skew(-40deg, 34deg);
+    }
+
+    90%{
+        opacity: 1;
+        transform: skew(15deg, 15deg);
+    }
+
+    100%{
+        transform: skew(15deg, 15deg);
+        opacity: 0;
+    }
+}
+
+.animation_snow_dansing_4{
+    animation-name: animation_dansing_4;
+    animation-duration: 10s;
+}
+
+@keyframes animation_dansing_4 {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+        transform: skew(15deg, 15deg);
+    }
+
+    10%{
+        opacity: 1;
+        transform: scale(2);
+        transform: skew(15deg, 15deg);
+    }
+
+    50%{
+        opacity: 1;
+        transform: scale(3);
+        transform: skew(-40deg, 34deg);
+    }
+
+    90%{
+        opacity: 1;
+        transform: scale(2);
+        transform: skew(15deg, 15deg);
+    }
+
+    100%{
+        transform: scale(0);
+        transform: skew(15deg, 15deg);
+        opacity: 0;
+    }
+}
+
+.animation_snow_dansing_5{
+    animation-name: animation_dansing_5;
+    animation-duration: 10s;
+}
+
+@keyframes animation_dansing_5 {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+        rotate: 0deg;
+    }
+
+    10%{
+        opacity: 1;
+        transform: scale(2);
+        rotate: 90deg;
+    }
+
+    50%{
+        opacity: 1;
+        transform: scale(3);
+        rotate: 180deg;
+    }
+
+    90%{
+        opacity: 1;
+        transform: scale(2);
+        rotate: 90deg;
+    }
+
+    100%{
+        transform: scale(0);
+        opacity: 0;
+        rotate: 0deg;
+    }
+}
